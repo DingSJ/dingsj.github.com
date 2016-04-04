@@ -1,170 +1,248 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE HTML>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Night Club</title>
-<link href="nightclub.css" rel="stylesheet" type="text/css" />
-<style type="text/css">
-<!--
-.style1 {
-	color: #5c8bc7
-}
--->
-</style>
+<meta charset="UTF-8">
+<title>我的主页</title>
+<link href="./css/style.css" rel="stylesheet" type="text/css"  media="all" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="./css/default.css" />
+<link rel="stylesheet" type="text/css" href="./css/component.css" />
+<script src="./js/modernizr.custom.js"></script>
+<script type="text/javascript" src="./js/jquery.min.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+		$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+		});
+	});
+	</script>
 </head>
-
 <body>
-<form id="form1" name="form1" method="post" action="">
-  <div id="container">
-    <div class="banner"><img src="images/banner.gif" alt="Banner" width="726" height="88" /></div>
-    <div class="searcbar">
-      <label></label>
-    <input name="textfield" type="text" class="input01" id="password" />
-          <label>
-      <select name="user" class="select02" id="user">
-        <option>People</option>
-          </select>
-      </label>
-          <label>
-          <input type="submit" name="Search" id="Search" value="Search" />
-          </label>
-    </div>
-    <div class="navigation">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Browse</a></li>
-        <li><a href="#">Invite</a></li>
-        <li><a href="#">Apps</a></li>
-        <li><a href="#">Blogs</a></li>
-        <li><a href="#">Favorites</a></li>
-        <li><a href="#">Forum</a></li>
-        <li><a href="#">Groups</a></li>
-        <li><a href="#">Events</a></li>
-        <li> <a href="#">MySpaceTV</a></li>
-        <li><a href="#">Music</a></li>
-        <li><a href="#">Comedy</a></li>
-        <li><a href="#">Classifieds</a></li>
-      </ul>
-    </div><div class="topbar"><div style="width:180px; float:left;"><span class="img-photo"><img src="images/photo.gif" alt="Photo" width="170" height="170" /></span></div>
-    <div style="width:560px; float:right;"><div style="height:70px; margin-bottom: 8px;">
-    <div style="width:260px; float:left;"><span class="toptitle">Night Club</span><br />
-      <br />
-    View My:  Photos Videos</div>
-    <div style="width:240px; float:right; text-align: right;">www.myspace.com/399120829<br />
-        <br />
-          Send Message<br />
-      Add Comment</div>
-    </div></div><div style="width:560px; float:right;"><div style="height:70px; border-style: solid; border-width: 1px; padding: 5px; border-color: #CCCCCC; background-color: #000000;">your name<br />
-      25 / Male<br />
-      United States<br />
-      Last Login: 7/10/2009</div>
-    </div>
-    </div>
-    
-    <div id="contentarea">
-      <div class="rightcolumn">
-        <div class="column">
-          <div class="titlebar">
-            <h1>Blurbs</h1>
-          </div>
-          <div class="content-inner">
-            <span class="boxtitle">About me:            </span>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec.</p>
-            <p class="boxtitle">Who I’d like to meet:</p>
-            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.          </div>
-        </div>
-        <div class="column">
-          <div class="titlebar">
-            <h1>Friend Space (Top 10)</h1>
-          </div>
-          <div class="content-inner">
-            You haven't added any friends yet.<br />
-              To start having fun on MySpace you need to invite some friends and get <br />
-              the ball rolling!<br />
-            (Invite Your Friends Here)          </div>
-        </div>
-        <div class="column">
-          <div class="titlebar">
-            <h1>Comments</h1>
-          </div>
-          <div class="content-inner">
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-          </div>
-        </div>
-      </div>
-      <div class="leftcolumn">
-        <div class="column">
-          <div class="titlebar">
-            <h1>Interests</h1>
-          </div>
-          <div class="leftbar1">
-             <span class="boxtitle">General</span><br />
-            Lorem ipsum dolor conseqout.<br class="clearboth" />
-          </div>
-          <div class="leftbar2">
-             <span class="boxtitle">Music</span><br />
-            Pop Music, Jazz, Instrumental.<br class="clearboth" />
-          </div>
-          <div class="leftbar1">
-             <span class="boxtitle">Movies</span><br />
-            Movies Title<br class="clearboth" />
-          </div>
-          <div class="leftbar2">
-             <span class="boxtitle">Television</span><br />
-            Drama Titles<br class="clearboth" />
-          </div>
-        </div>
-        <div class="column">
-          <div class="titlebar">
-            <h1>DETAILS</h1>
-          </div>
-          <div class="leftbar1">
-             <span class="boxtitle">Status :</span> Single<br class="clearboth" />
-          </div>
-          <div class="leftbar2">
-             <span class="boxtitle">Here for : </span>Friends<br class="clearboth" />
-          </div> 
-          <div class="leftbar1">
-             <span class="boxtitle">Body Type :</span> Slim<br class="clearboth" />
-          </div>
-          <div class="leftbar2">
-             <span class="boxtitle">Ethnicity  :</span> Asian<br class="clearboth" />
-          </div> 
-          <div class="leftbar1">
-             <span class="boxtitle">Religion :</span> Other<br class="clearboth" />
-          </div>
-          <div class="leftbar2">
-             <span class="boxtitle">Zodiac Sign :</span> Leo<br class="clearboth" />
-          </div>
-          <div class="leftbar1">
-             <span class="boxtitle">Children :</span> I don't like kids<br class="clearboth" />
-          </div>
-          <div class="leftbar2">
-             <span class="boxtitle">Smoke / Drink :</span> No / No<br class="clearboth" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <br class="clearboth" />
-  <div class="footer">
-    <ul>
-      <li>
-      Help      </li>
-      <li>Terms</li>
-      <li>Privacy Policy</li>
-      <li>Safety Tips</li>
-      <li>Report Abuse</li>
-      <li>Advertise</li>
-      <li>Developers</li>
-      <li>MySpace International</li>
-      <li>lMySpace Latino </li>
-    </ul>
-    <p>©2003-2009 MySpace.com. All Rights Reserved. </p>
-  </div>
-</form>
-</body>
+<!---start-wrap--->
+<!---start-header--->
+<div class="header">
+		<div class="wrap">
+			<!---start-logo--->
+			<div class="logo">
+				<!--a href="index.html"><img src="./images/logo.png"> </a-->
+			</div>
+			<!---End-logo--->
+			<!---start-top-nav--->
+			<div class="top-nav">
+				<ul>
+					<li><a href="#me" class="active">我</a></li>
+					<li><a href="#skills" class="scroll">技能</a></li>
+					<li><a href="#works" class="scroll">项目</a></li>
+					<li><a href="#contact" class="scroll">联系</a></li>
+				</ul>
+			</div>
+			<div class="clear"> </div>
+			<!---End-top-nav--->
+	     </div>
+	</div>
+		<!---End-wrap--->
+	<div class="content">
+		<div class="grid1" id="me">
+			<a href="#"><img src="images/1.jpg" width="412" height="502" title="name" /></a>
+		  <h3>Hi,I'm DingSJ</h3>
+		</div>
+		<div class="grid2" id="skills">
+			<h3>技能集合</h3>
+			<p>&nbsp;</p>
+		<div class="main">
+				<ul id="bk-list" class="bk-list clearfix">
+					<li>
+						<div class="bk-book book-1 bk-bookdefault">
+							<div class="bk-front">
+								<div class="bk-cover">
+									<h2>
+										<span>The standard Lorem Ipsum passage</span>
+										<span>A Catwork Orange</span>
+									</h2>
+								</div>
+								<div class="bk-cover-back"></div>
+							</div>
+							<div class="bk-page">
+								<div class="bk-content bk-content-current">
+									<p>Red snapper Kafue pike fangtooth humums slipmouth, salmon cutlassfish; swallower European perch mola mola sunfish, threadfin bream</p>
+								</div>
+								<div class="bk-content">
+									<p>Whale catfish leatherjacket deep sea anglerfish grenadier sawfish pompano dolphinfish carp large-eye bream, squeaker amago. Sandroller;</p>
+								</div>
+								<div class="bk-content">
+									<p>Trahira giant wels cutlassfish snapper koi blackchin mummichog mustard eel rock bass whiff murray cod. Bigmouth buffalo ling cod giant </p>
+								</div>
+							<nav><span class="bk-page-prev">&lt;</span><span class="bk-page-next">&gt;</span></nav></div>
+							<div class="bk-back">
+								<p>In this nightmare vision of cats in revolt, fifteen-year-old Alex and his friends set out on a diabolical orgy of robbery, rape, torture </p>
+							</div>
+							<div class="bk-right"></div>
+							<div class="bk-left">
+								<h2>
+									<span>Anthony Burghiss</span>
+									<span>A Catwork Orange</span>
+								</h2>
+							</div>
+							<div class="bk-top"></div>
+							<div class="bk-bottom"></div>
+						</div>
+						<div class="bk-info">
+							<button class="bk-bookback">翻页</button>
+							<button class="bk-bookview">浏览内部</button>
+							<h3>
+								<span>The standard Lorem Ipsum</span>
+								<span>A Catwork Orange</span>
+							</h3>
+							<p>Social prophecy? Black comedy? Study of freewill? A Clockwork Orange is all of these. </p>
+						</div>
+							<div class="bk-content">
+									<p>Trahira giant wels cutlassfish snapper koi blackchin mummichog mustard eel rock bass whiff murray cod. Bigmouth buffalo ling cod giant </p>
+								</div>
+					</li>
+					<li>
+						<div class="bk-book book-2 bk-bookdefault">
+							<div class="bk-front">
+								<div class="bk-cover">
+										<h3>
+								<span>The standard Lorem Ipsum</span>
+								<span>A Catwork Orange</span>
+							</h3>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+								</div>
+								<div class="bk-cover-back"></div>
+							</div>
+							<div class="bk-page">
+								<div class="bk-content">
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+								</div>
+								<div class="bk-content">
+									<p>Trahira giant wels cutlassfish snapper koi blackchin mummichog mustard eel .</p>
+								</div>
+								<div class="bk-content bk-content-current">
+									<p>Red snapper Kafue pike fangtooth humums's slipmouth, salmon cutlassfish;</p>
+								</div>
+							<nav><span class="bk-page-prev">&lt;</span><span class="bk-page-next">&gt;</span></nav></div>
+							<div class="bk-back">
+								<p>Tyrant, blackmailer, racketeer, murderer - his influence reaches every level of American society.</p>
+							</div>
+							<div class="bk-right"></div>
+							<div class="bk-left">
+								<h2>
+									<span>J.C. Salinger</span>
+									<span>Donec mattis erat nec tellus</span>
+								</h2>
+							</div>
+							<div class="bk-top"></div>
+							<div class="bk-bottom"></div>
+						</div>
+						<div class="bk-info">
+							<button class="bk-bookback">翻页</button>
+							<button class="bk-bookview">浏览内部
+							</button><h3>
+								<span>J.C. Salinger</span>
+								<span>Donec mattis erat</span>
+							</h3>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+						</div>
+					</li>
+					<li>
+						<div class="bk-book book-3 bk-bookdefault">
+							<div class="bk-front">
+								<div class="bk-cover">
+									<h2>
+										<span>J.C. Salinger</span>
+										<span>Vestibulum vel nunc vitae</span>
+									</h2>
+								</div>
+								<div class="bk-cover-back"></div>
+							</div>
+							<div class="bk-page">
+								<div class="bk-content bk-content-current">
+									<p>Oceanic flyingfish spotted danio fingerfish leaffish, Billfish halibut Atlantic cod threadsail poacher slender mola. Swallower muskellunge, turbot needlefish yellow perch trout dhufish dwarf gourami false moray southern smelt cod dwarf gourami. Betta blue catfish bottlenose electric ray sablefish.</p>
+								</div>
+								<div class="bk-content">
+									<p>Whale catfish leatherjacket deep sea anglerfish grenadier sawfish pompano dolphinfish carp large-eye bream, squeaker amago. Sandroller; rough scad, tiger shovelnose catfish snubnose parasitic eel? Black bass soldierfish duckbill--Rattail Atlantic saury Blind shark California halibut; false trevally warty angler!</p>
+								</div>
+								<div class="bk-content">
+									<p>Trahira giant wels cutlassfish snapper koi blackchin mummichog mustard eel rock bass whiff murray cod. Bigmouth buffalo ling cod giant wels, sauger pink salmon. Clingfish luderick treefish flatfish Cherubfish oldwife Indian mul gizzard shad hagfish zebra danio. Butterfly ray lizardfish ponyfish muskellunge Long-finned sand diver mullet swordfish limia ghost carp filefish.</p>
+								</div>
+							<nav><span class="bk-page-prev">&lt;</span><span class="bk-page-next">&gt;</span></nav></div>
+							<div class="bk-back">
+								<img src="./images/3.png" alt="cat">
+								<p>Holden Catfield is a seventeen-year-old dropout who has just been kicked out of his fourth school. Navigating his way through the challenges of growing up, Holden dissects the 'phony' aspects of society.</p>
+							</div>
+							<div class="bk-right"></div>
+							<div class="bk-left">
+								<h2>
+									<span>J.C. Salinger</span>
+									<span>The Catcher in the Rye</span>
+								</h2>
+							</div>
+							<div class="bk-top"></div>
+							<div class="bk-bottom"></div>
+						</div>
+						<div class="bk-info">
+							<button class="bk-bookback">翻页</button>
+							<button class="bk-bookview">浏览内部</button>
+							<h3>
+								<span>J.C. Salinger</span>
+								<span>The Catcher in the Rye</span>
+							</h3>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="./js/books1.js"></script>
+		<script>
+			$(function() {
+
+				Books.init();
+
+			});
+		</script>
+		</div>
+		<div class="grid3" id="works">
+			<div class="grid3-header">			
+				<h3>项目列表</h3>
+				<p>&nbsp;</p>
+			</div>
+			<div class="grid3-content">
+				<div class="grid3-left">
+					<h3>项目一( OA系统)</h3>
+					 <p>Project-Name Lorem Ipsum is simply dummy text of the printing and typesetting industry.when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+					<ul>
+						<li><a href="#"><img src="./images/icon1.png" titl="Icon-Name" /></a></li>
+						<li><a href="#"><img src="./images/icon2.png" titl="Icon-Name" /></a></li>
+						<li><a href="#"><img src="./images/icon3.png" titl="Icon-Name" /></a></li>
+					</ul>
+					<a class="button" href="#">查看细节</a>
+				</div>
+				<div class="grid3-right">
+					<a href="#"><img src="./images/pic4.jpg" title="project-name" /></a>
+				</div>
+				<div class="clear"> </div>
+			</div>
+		</div>	
+		<div class="twiiter-box">
+			
+	  </div>
+		<div class="contact" id="contact">
+			<h3>联系我			</h3>
+			<form>
+			<input type="text" class="textbox" value="QQ :  1172671075 " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+			<input type="text" class="textbox" value="Email:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+			<textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message</textarea>
+			
+		  </form>
+		</div>
+		<div class="catch-me">
+			
+		</div>
+	</div>
+	</body>
 </html>
+
