@@ -1,248 +1,449 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<!--[if IE 7 ]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html> <!--<![endif]-->
+
 <head>
-<meta charset="UTF-8">
-<title>我的主页</title>
-<link href="./css/style.css" rel="stylesheet" type="text/css"  media="all" />
-<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" type="text/css">
-<link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="./css/default.css" />
-<link rel="stylesheet" type="text/css" href="./css/component.css" />
-<script src="./js/modernizr.custom.js"></script>
-<script type="text/javascript" src="./js/jquery.min.js"></script>
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
-			event.preventDefault();
-		$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
-		});
-	});
-	</script>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta charset="utf-8"/>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>DingSJ</title>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+
+    <!--[if lt IE 9]>
+	    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.6.1.min.js"><\/script>')</script>
+
+    <script src="js/scrollToTop.js"></script>
+
 </head>
-<body>
-<!---start-wrap--->
-<!---start-header--->
-<div class="header">
-		<div class="wrap">
-			<!---start-logo--->
-			<div class="logo">
-				<!--a href="index.html"><img src="./images/logo.png"> </a-->
-			</div>
-			<!---End-logo--->
-			<!---start-top-nav--->
-			<div class="top-nav">
-				<ul>
-					<li><a href="#me" class="active">我</a></li>
-					<li><a href="#skills" class="scroll">技能</a></li>
-					<li><a href="#works" class="scroll">项目</a></li>
-					<li><a href="#contact" class="scroll">联系</a></li>
-				</ul>
-			</div>
-			<div class="clear"> </div>
-			<!---End-top-nav--->
-	     </div>
-	</div>
-		<!---End-wrap--->
-	<div class="content">
-		<div class="grid1" id="me">
-			<a href="#"><img src="images/1.jpg" width="412" height="502" title="name" /></a>
-		  <h3>Hi,I'm DingSJ</h3>
-		</div>
-		<div class="grid2" id="skills">
-			<h3>技能集合</h3>
-			<p>&nbsp;</p>
-		<div class="main">
-				<ul id="bk-list" class="bk-list clearfix">
-					<li>
-						<div class="bk-book book-1 bk-bookdefault">
-							<div class="bk-front">
-								<div class="bk-cover">
-									<h2>
-										<span>The standard Lorem Ipsum passage</span>
-										<span>A Catwork Orange</span>
-									</h2>
-								</div>
-								<div class="bk-cover-back"></div>
-							</div>
-							<div class="bk-page">
-								<div class="bk-content bk-content-current">
-									<p>Red snapper Kafue pike fangtooth humums slipmouth, salmon cutlassfish; swallower European perch mola mola sunfish, threadfin bream</p>
-								</div>
-								<div class="bk-content">
-									<p>Whale catfish leatherjacket deep sea anglerfish grenadier sawfish pompano dolphinfish carp large-eye bream, squeaker amago. Sandroller;</p>
-								</div>
-								<div class="bk-content">
-									<p>Trahira giant wels cutlassfish snapper koi blackchin mummichog mustard eel rock bass whiff murray cod. Bigmouth buffalo ling cod giant </p>
-								</div>
-							<nav><span class="bk-page-prev">&lt;</span><span class="bk-page-next">&gt;</span></nav></div>
-							<div class="bk-back">
-								<p>In this nightmare vision of cats in revolt, fifteen-year-old Alex and his friends set out on a diabolical orgy of robbery, rape, torture </p>
-							</div>
-							<div class="bk-right"></div>
-							<div class="bk-left">
-								<h2>
-									<span>Anthony Burghiss</span>
-									<span>A Catwork Orange</span>
-								</h2>
-							</div>
-							<div class="bk-top"></div>
-							<div class="bk-bottom"></div>
-						</div>
-						<div class="bk-info">
-							<button class="bk-bookback">翻页</button>
-							<button class="bk-bookview">浏览内部</button>
-							<h3>
-								<span>The standard Lorem Ipsum</span>
-								<span>A Catwork Orange</span>
-							</h3>
-							<p>Social prophecy? Black comedy? Study of freewill? A Clockwork Orange is all of these. </p>
-						</div>
-							<div class="bk-content">
-									<p>Trahira giant wels cutlassfish snapper koi blackchin mummichog mustard eel rock bass whiff murray cod. Bigmouth buffalo ling cod giant </p>
-								</div>
-					</li>
-					<li>
-						<div class="bk-book book-2 bk-bookdefault">
-							<div class="bk-front">
-								<div class="bk-cover">
-										<h3>
-								<span>The standard Lorem Ipsum</span>
-								<span>A Catwork Orange</span>
-							</h3>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
-								</div>
-								<div class="bk-cover-back"></div>
-							</div>
-							<div class="bk-page">
-								<div class="bk-content">
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
-								</div>
-								<div class="bk-content">
-									<p>Trahira giant wels cutlassfish snapper koi blackchin mummichog mustard eel .</p>
-								</div>
-								<div class="bk-content bk-content-current">
-									<p>Red snapper Kafue pike fangtooth humums's slipmouth, salmon cutlassfish;</p>
-								</div>
-							<nav><span class="bk-page-prev">&lt;</span><span class="bk-page-next">&gt;</span></nav></div>
-							<div class="bk-back">
-								<p>Tyrant, blackmailer, racketeer, murderer - his influence reaches every level of American society.</p>
-							</div>
-							<div class="bk-right"></div>
-							<div class="bk-left">
-								<h2>
-									<span>J.C. Salinger</span>
-									<span>Donec mattis erat nec tellus</span>
-								</h2>
-							</div>
-							<div class="bk-top"></div>
-							<div class="bk-bottom"></div>
-						</div>
-						<div class="bk-info">
-							<button class="bk-bookback">翻页</button>
-							<button class="bk-bookview">浏览内部
-							</button><h3>
-								<span>J.C. Salinger</span>
-								<span>Donec mattis erat</span>
-							</h3>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-						</div>
-					</li>
-					<li>
-						<div class="bk-book book-3 bk-bookdefault">
-							<div class="bk-front">
-								<div class="bk-cover">
-									<h2>
-										<span>J.C. Salinger</span>
-										<span>Vestibulum vel nunc vitae</span>
-									</h2>
-								</div>
-								<div class="bk-cover-back"></div>
-							</div>
-							<div class="bk-page">
-								<div class="bk-content bk-content-current">
-									<p>Oceanic flyingfish spotted danio fingerfish leaffish, Billfish halibut Atlantic cod threadsail poacher slender mola. Swallower muskellunge, turbot needlefish yellow perch trout dhufish dwarf gourami false moray southern smelt cod dwarf gourami. Betta blue catfish bottlenose electric ray sablefish.</p>
-								</div>
-								<div class="bk-content">
-									<p>Whale catfish leatherjacket deep sea anglerfish grenadier sawfish pompano dolphinfish carp large-eye bream, squeaker amago. Sandroller; rough scad, tiger shovelnose catfish snubnose parasitic eel? Black bass soldierfish duckbill--Rattail Atlantic saury Blind shark California halibut; false trevally warty angler!</p>
-								</div>
-								<div class="bk-content">
-									<p>Trahira giant wels cutlassfish snapper koi blackchin mummichog mustard eel rock bass whiff murray cod. Bigmouth buffalo ling cod giant wels, sauger pink salmon. Clingfish luderick treefish flatfish Cherubfish oldwife Indian mul gizzard shad hagfish zebra danio. Butterfly ray lizardfish ponyfish muskellunge Long-finned sand diver mullet swordfish limia ghost carp filefish.</p>
-								</div>
-							<nav><span class="bk-page-prev">&lt;</span><span class="bk-page-next">&gt;</span></nav></div>
-							<div class="bk-back">
-								<img src="./images/3.png" alt="cat">
-								<p>Holden Catfield is a seventeen-year-old dropout who has just been kicked out of his fourth school. Navigating his way through the challenges of growing up, Holden dissects the 'phony' aspects of society.</p>
-							</div>
-							<div class="bk-right"></div>
-							<div class="bk-left">
-								<h2>
-									<span>J.C. Salinger</span>
-									<span>The Catcher in the Rye</span>
-								</h2>
-							</div>
-							<div class="bk-top"></div>
-							<div class="bk-bottom"></div>
-						</div>
-						<div class="bk-info">
-							<button class="bk-bookback">翻页</button>
-							<button class="bk-bookview">浏览内部</button>
-							<h3>
-								<span>J.C. Salinger</span>
-								<span>The Catcher in the Rye</span>
-							</h3>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-						</div>
-					</li>
-				</ul>
-			</div>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-		<script src="./js/books1.js"></script>
-		<script>
-			$(function() {
 
-				Books.init();
+<body id="top">
 
-			});
-		</script>
-		</div>
-		<div class="grid3" id="works">
-			<div class="grid3-header">			
-				<h3>项目列表</h3>
-				<p>&nbsp;</p>
+<!-- header
+============================================================================= -->
+
+<div id="header-wrap"><header>
+
+        <hgroup>
+            <h1><a href="index.html"></a></h1>
+            <h3>Welcome to my Web.</h3>
+        </hgroup>
+
+		<nav>
+		    <ul>
+			    <li id="current"><a href="index.html">主页</a><span></span></li>
+			    <li><a href="style.html">Style Demo</a><span></span></li>
+			    <li><a href="blog.html">Blog</a><span></span></li>
+			    <li><a href="archive.html">Archives</a><span></span></li>
+			    <li><a href="index.html">Support</a><span></span></li>
+			    <li><a href="index.html">About</a><span></span></li>
+		    </ul>
+	    </nav>
+
+        <div class="subscribe">
+            <span>Subscribe:</span> <a href="#">Email</a> | <a href="#">RSS</a>
+        </div>
+
+    <!-- /header -->
+</header></div>
+
+<!-- featured
+============================================================================== -->
+
+<div id="featured-wrap"><article id="featured" class="clearfix">
+
+    <div id="featured-ribbon"></div>
+
+    <div class="image-block">
+        <a title="" href="#"><img width="335" height="240" alt="featured" src="images/img-featured.jpg" /></a>
+    </div>
+
+    <div class="text-block">
+        <h2><a href="#">Read Me First</a></h2>
+        <p class="post-meta">make a brief introduction</p>
+
+        <p><font size="+1">姓名:</font>&nbsp;&nbsp;&nbsp;DingSJ<br/>
+        <font size="+1">手机:</font>&nbsp;&nbsp;&nbsp;&nbsp;152 2568 6971<br/>
+        <font size="+1">邮箱:</font>&nbsp;&nbsp; 15225686971@163.com<br/>
+        <font size="+1">QQ:</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1172671075<br/>
+        </p>
+
+        <p>
+        求职意向： Java工程师（实习）
+        </p>
+
+        <p><a href="#recent" class="more">Continue Reading</a></p>
+
+    </div>
+
+</article></div>
+
+<!-- Content
+============================================================================== -->
+
+<div id="content-wrap-home">
+
+    <!-- main -->
+    <section id="main">
+		<a name="recent" href="#"></a>
+        <h3>Recent Projects</h3>
+
+        <article class="col">
+
+            <a href="index.html" title=""><img width="240" height="100" alt="img" class="thumbnail" src="images/thumb-1.jpg" /></a>
+
+            <div class="top">
+
+               <h4><a href="#">OA</a></h4>
+               <p><span class="datetime">March 15, 2016</span><!--a class="comment" href="index.html">2 Comments</a--></p>
+
+            </div>
+
+            <div class="content">
+
+			    <p>
+					
+              <table align="center">
+              	<tr height="10px">
+                	<td>模块</td>
+                    <td>用户管理、角色管理、权限管理、网上交流、流程管理</td>
+                </tr>
+                	<tr>
+                	<td>架构</td>
+                    <td>Struts2、Spring、Hibernate、jbpm</td>
+                </tr>
+                </tr>
+                	<tr>
+                	<td>工具</td>
+                    <td>MySQL、MyEclipse、Tomcat</td>
+                </tr>
+                </tr>
+                	<tr>
+                	<td>页面</td>
+                    <td><a href="./OA/index.html" target="_blank">Point I see</a></td>
+               </tr>
+               </tr>
+                	<tr>
+                	<td>源码</td>
+                    <td><a href="http://www.baidu.com" target="_blank">Point I see</a></td>
+               </tr>
+              </table>
+				</p>
+
+				<p><a href="#" class="more">continue reading</a></p>
+
 			</div>
-			<div class="grid3-content">
-				<div class="grid3-left">
-					<h3>项目一( OA系统)</h3>
-					 <p>Project-Name Lorem Ipsum is simply dummy text of the printing and typesetting industry.when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+        </article>
+
+        <article class="col even">
+
+            <a href="index.html" title=""><img width="240" height="100" alt="img" class="thumbnail" src="images/thumb-2.jpg" /></a>
+
+            <div class="top">
+
+               <h4><a href="#">JK</a></h4>
+               <p><span class="datetime">April 17, 2016</span><!--a class="comment" href="index.html">2 Comments</a--></p>
+
+            </div>
+
+            <div class="content">
+
+			    <p>
+				 <table align="center">
+              	<tr>
+                	<td>项目模块</td>
+                    <td>用户管理、角色管理、权限管理、流程管理</td>
+                </tr>
+                	<tr>
+                	<td>项目架构</td>
+                    <td>Struts2、Spring、Hibernate、Maven</td>
+                </tr>
+                </tr>
+                	<tr>
+                	<td>项目工具</td>
+                    <td>MySQL、Eclipse-Maven、Tomcat</td>
+                </tr>
+                </tr>
+                	<tr>
+                	<td>静态页面</td>
+                    <td><a href="./JK/index.html" target="_blank">Point I see</a></td>
+               </tr>
+               </tr>
+                	<tr>
+                	<td>项目源码</td>
+                    <td><a href="./OA/index.html" target="_blank">Point I see</a></td>
+               </tr>
+              </table>
+				</p>
+
+				<p><a href="#" class="more">continue reading</a></p>
+
+			</div>
+        </article>
+
+        <div class="fix"></div>
+
+        <article class="col">
+
+            <a href="index.html" title=""><img width="240" height="100" alt="img" class="thumbnail" src="images/thumb-3.jpg" /></a>
+
+            <div class="top">
+
+               <h4><a href="index.html">Cras Fringilla Magna</a></h4>
+               <p><span class="datetime">December 16, 2011</span><a class="comment" href="index.html">2 Comments</a></p>
+
+            </div>
+
+            <div class="content">
+
+			    <p>
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum.
+				Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu
+				posuere nunc justo tempus leo. Donec mattis, purus nec placerat bibendum, dui pede condimentum
+			   	odio, ac blandit ante orci ut diam. Cras fringilla magna. Phasellus suscipit, leo a pharetra
+				condimentum, lorem tellus eleifend magna, eget fringilla velit magna id neque.
+				</p>
+
+				<p><a href="#" class="more">continue reading</a></p>
+
+			</div>
+
+        </article>
+
+        <article class="col even">
+
+            <a href="index.html" title=""><img width="240" height="100" alt="img" class="thumbnail" src="images/thumb-4.jpg" /></a>
+
+            <div class="top">
+
+               <h4><a href="index.html">Orci Ac Convallis Aliquam</a></h4>
+               <p><span class="datetime">December 14, 2011</span><a class="comment" href="index.html">2 Comments</a></p>
+
+            </div>
+
+            <div class="content">
+
+			    <p>
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum.
+				Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu
+				posuere nunc justo tempus leo. Donec mattis, purus nec placerat bibendum, dui pede condimentum
+			   	odio, ac blandit ante orci ut diam. Cras fringilla magna. Phasellus suscipit, leo a pharetra
+				condimentum, lorem tellus eleifend magna, eget fringilla velit magna id neque.
+				</p>
+
+				<p><a href="#" class="more">continue reading</a></p>
+
+			</div>
+
+        </article>
+
+
+
+    </section>
+
+    <!-- sidebar -->
+    <aside id="sidebar">
+
+				<div class="sidemenu">
+					<h3>Sidebar Menu</h3>
 					<ul>
-						<li><a href="#"><img src="./images/icon1.png" titl="Icon-Name" /></a></li>
-						<li><a href="#"><img src="./images/icon2.png" titl="Icon-Name" /></a></li>
-						<li><a href="#"><img src="./images/icon3.png" titl="Icon-Name" /></a></li>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="index.html">TemplateInfo</a></li>
+						<li><a href="style.html">Style Demo</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="archives.html">Archives</a></li>
 					</ul>
-					<a class="button" href="#">查看细节</a>
 				</div>
-				<div class="grid3-right">
-					<a href="#"><img src="./images/pic4.jpg" title="project-name" /></a>
-				</div>
-				<div class="clear"> </div>
-			</div>
-		</div>	
-		<div class="twiiter-box">
-			
-	  </div>
-		<div class="contact" id="contact">
-			<h3>联系我			</h3>
-			<form>
-			<input type="text" class="textbox" value="QQ :  1172671075 " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
-			<input type="text" class="textbox" value="Email:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
-			<textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message</textarea>
-			
-		  </form>
-		</div>
-		<div class="catch-me">
-			
-		</div>
-	</div>
-	</body>
-</html>
 
+
+				<div class="sidemenu">
+					<h3>Sponsors</h3>
+					<ul>
+						<li><a title="Site Templates" href="http://sc.chinaz.com?ref=ealigam">Themeforest
+                            <span>Site Templates, Web &amp; CMS Themes</span>
+                            </a>
+                        </li>
+						<li><a title="Website Templates" href="http://sc.chinaz.com/?go=228858961">4Templates
+                            <span>Low Cost High-Quality Templates</span>
+                            </a>
+                        </li>
+						<li><a title="Web Templates" href="http://sc.chinaz.com?aff=ealigam">TemplateMonster
+                            <span>Delivering the Best Templates on the Net!</span>
+                            </a>
+                        </li>
+						<li><a title="Stock Graphics" href="http://sc.chinaz.com?ref=ealigam">GraphicRiver
+                            <span>Awesome Stock Graphics</span>
+                            </a>
+                        </li>
+						<li><a title="Web Hosting" href="http://sc.chinaz.com/?r.cgi?287326|SSHOUT">DreamHost
+                            <span>Premium Webhosting. Use the promocode <strong>sshout</strong> and save <strong>50 USD</strong>.</span>
+                            </a>
+                        </li>
+					</ul>
+				</div>
+
+				<h3>Photostream</h3>
+
+				<ul class="photostream">
+					<li><a href="index.html"><img width="50" height="50" alt="thumbnail" src="images/thumb.jpg"></a></li>
+					<li><a href="index.html"><img width="50" height="50" alt="thumbnail" src="images/thumb.jpg"></a></li>
+					<li><a href="index.html"><img width="50" height="50" alt="thumbnail" src="images/thumb.jpg"></a></li>
+					<li><a href="index.html"><img width="50" height="50" alt="thumbnail" src="images/thumb.jpg"></a></li>
+					<li><a href="index.html"><img width="50" height="50" alt="thumbnail" src="images/thumb.jpg"></a></li>
+					<li><a href="index.html"><img width="50" height="50" alt="thumbnail" src="images/thumb.jpg"></a></li>
+				</ul>
+
+	<!-- /sidebar -->
+	</aside>
+
+</div>
+
+<!-- extra
+============================================================================== -->
+<div id="extra-wrap"><div id="extra" class="clearfix">
+
+    <div class="xcol">
+
+		    <h3>Contact Info</h3>
+
+		    <p>
+		    <strong>Phone: </strong>+1234567<br/>
+		    <strong>Fax: </strong>+123456789
+		    </p>
+
+		    <p><strong>Address: </strong>123 Put Your Address Here</p>
+            <p><strong>E-mail: </strong>me@jungleland.com</p>
+		    <p>Want more info - go to our <a href="#">contact page</a></p>
+
+            <h3>Follow Us</h3>
+
+	        <div class="footer-list social">
+			    <ul>
+				    <li class="facebook"><a href="index.html">Facebook</a></li>
+				    <li class="twitter"><a href="index.html">Twitter</a></li>
+				    <li class="googleplus"><a href="index.html">Google+</a></li>
+				    <li class="email"><a href="index.html">Email</a></li>
+				    <li class="rss"><a href="index.html">RSS Feed</a></li>
+			    </ul>
+		    </div>
+
+	</div>
+
+    <div class="xcol">
+
+            <h3>Site Links</h3>
+
+	        <div class="footer-list">
+			    <ul>
+				    <li><a href="index.html">Home</a></li>
+				    <li><a href="index.html">Style Demo</a></li>
+				    <li><a href="index.html">Blog</a></li>
+				    <li><a href="index.html">Archive</a></li>
+				    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                    <li><a href="index.html">Site Map</a></li>
+			    </ul>
+		    </div>
+
+            <h3>Credits</h3>
+
+            <div class="footer-list">
+			    <ul>
+				    <li><a href="http://sc.chinaz.com/?free/vector-social-media-icons">
+						Social Media Icons by Icondock
+				        </a>
+				    </li>
+                    <li><a href="http://sc.chinaz.com/?">
+						Free Icons by Yummygum
+				        </a>
+				    </li>
+                    <li><a href="http://sc.chinaz.com/">
+                        Free Photos by PDPhoto
+                        </a>
+                    </li>
+			    </ul>
+		    </div>
+    </div>
+
+    <div class="xcol">
+
+
+
+            <h3>Archives</h3>
+
+	        <div class="footer-list">
+			    <ul>
+				    <li><a href="index.html">December 2011</a></li>
+				    <li><a href="index.html">November 2011</a></li>
+				    <li><a href="index.html">October 2011</a></li>
+				    <li><a href="index.html">September 2011</a></li>
+                    <li><a href="index.html">August 2011</a></li>
+                    <li><a href="index.html">July 2011</a></li>
+			    </ul>
+		    </div>
+
+            <h3>Web Resources</h3>
+
+	        <div class="footer-list">
+				<ul>
+                    <li><a title="Site Templates" href="http://sc.chinaz.com?ref=ealigam">ThemeForest</a></li>
+					<li><a title="Website Templates" href="http://sc.chinaz.com/?go=228858961">4Templates</a></li>
+					<li><a title="Web Templates" href="http://sc.chinaz.com?aff=ealigam">TemplateMonster</a></li>
+					<li><a title="Stock Graphics" href="http://sc.chinaz.com?ref=ealigam">GraphicRiver</a></li>
+					<li><a title="Web Hosting" href="http://sc.chinaz.com/?r.cgi?287326">Dreamhost</a></li>
+				</ul>
+			</div>
+
+	</div>
+
+
+
+    <div class="xcol last">
+
+        <h3>About</h3>
+
+        <p>
+        <a href="index.html"><img width="40" height="40" class="align-left" alt="firefox" src="images/gravatar.jpg"></a>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum.
+        Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu posuere nunc
+        justo tempus leo. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum.
+        Cras id urna. <a href="#">Learn more...</a>
+        </p>
+
+
+    </div>
+
+</div></div>
+
+<!-- footer
+============================================================================== -->
+<footer class="clearfix">
+
+	<p class="footer-left">
+		&copy; Copyright &copy; 2016.
+	</p>
+
+	<p class="footer-right">
+	   	<a href="index.html">Home</a> |
+		<!--a href="index.html">Sitemap</a> |
+		<a href="index.html">RSS Feed</a> |-->
+        <a class="back-to-top" href="#top">Back to Top</a>
+    </p>
+
+<!-- /footer -->
+</footer>
+
+
+
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>
