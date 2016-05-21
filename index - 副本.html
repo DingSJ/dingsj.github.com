@@ -14,14 +14,16 @@
     <title>DingSJ</title>
 
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-
+    <link rel="stylesheet" type="text/css" media="screen" href="css/myindex.css" />
     <!--[if lt IE 9]>
 	    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="myindex.js"></script>
     <![endif]-->
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery-1.6.1.min.js"><\/script>')</script>
-
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.banner.js"></script>
     <script src="js/scrollToTop.js"></script>
 
 </head>
@@ -33,20 +35,20 @@
 
 <div id="header-wrap"><header>
 
-        <hgroup>
-            <h1><a href="index.html"></a></h1>
-            <h3>Welcome to my Web.</h3>
-        </hgroup>
+           <hgroup>
+        <h1><a href="index.html"></a></h1>
+        <h3>Welcome to my Web.</h3>
+    </hgroup>
 
 		<nav>
-		    <ul>
-			    <li id="current"><a href="index.html">主页</a><span></span></li>
-			    <li><a href="style.html">Style Demo</a><span></span></li>
-			    <li><a href="blog.html">Blog</a><span></span></li>
-			    <li><a href="archive.html">Archives</a><span></span></li>
-			    <li><a href="index.html">Support</a><span></span></li>
-			    <li><a href="index.html">About</a><span></span></li>
-		    </ul>
+            <ul>
+                <li id="current"><a href="index.html">主页</a><span></span></li>
+                <li><a href="style.html">Style Demo</a><span></span></li>
+                <li><a href="blog.html">Blog</a><span></span></li>
+                <li><a href="archive.html">Archives</a><span></span></li>
+                <li><a href="index.html">Support</a><span></span></li>
+                <li><a href="index.html">About</a><span></span></li>
+            </ul>
 	    </nav>
 
         <div class="subscribe">
@@ -62,29 +64,25 @@
 
 <div id="featured-wrap"><article id="featured" class="clearfix">
 
-    <div id="featured-ribbon"></div>
-
-    <div class="image-block">
-        <a title="" href="#"><img width="335" height="240" alt="featured" src="images/img-featured.jpg" /></a>
+    <div class="banner">
+        <ul class="banList">
+            <li class="active"><a href="#"><img src="images/i2.jpg"/></a></li>
+            <li><a href="#"><img src="images/i1.png"/></a></li>
+            <li><a href="#"><img src="images/i3.jpg"/></a></li>
+        </ul>
+        <div class="fomW">
+            <div class="jsNav">
+                <a href="javascript:;" class="trigger current"></a>
+                <a href="javascript:;" class="trigger"></a>
+                <a href="javascript:;" class="trigger"></a>
+            </div>
+        </div>
     </div>
-
-    <div class="text-block">
-        <h2><a href="#">Read Me First</a></h2>
-        <p class="post-meta">make a brief introduction</p>
-
-        <p><font size="+1">姓名:</font>&nbsp;&nbsp;&nbsp;DingSJ<br/>
-        <font size="+1">手机:</font>&nbsp;&nbsp;&nbsp;&nbsp;152 2568 6971<br/>
-        <font size="+1">邮箱:</font>&nbsp;&nbsp; 15225686971@163.com<br/>
-        <font size="+1">QQ:</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1172671075<br/>
-        </p>
-
-        <p>
-        求职意向： Java开发工程师（实习）
-        </p>
-        <p><a href="#recent" class="more">Continue Reading</a></p>
-
-    </div>
-
+<script>
+    $(function(){
+        $(".banner").swBanner();
+    });
+</script>
 </article></div>
 
 <!-- Content

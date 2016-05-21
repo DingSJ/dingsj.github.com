@@ -1,0 +1,178 @@
+/** {*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+/*}*/
+
+body, p{
+    margin: 0;
+    padding: 0;
+    border: 0px;
+    font-family: "Microsoft YaHei",Helvetica,Arial,sans-serif;
+}
+
+body{
+    background: #f1f1f1;
+}
+
+.cf:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.b{
+    font-weight: bold;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #c67114;
+    outline: 0;
+}
+
+
+a:hover, a:focus, a:active {
+    color: #ff784d;
+}
+
+.w-1000{
+    width:1000px;
+    margin:0px auto;
+}
+.learn-video img{
+    width:1000px;
+    height:560px;
+}
+.learn-video{
+    margin-bottom: 0px;
+}
+.learn-video-info{
+    width:1000px;
+    height:84px;
+    background-color: #3a2f24;
+    line-height:84px;
+}
+.left{
+    /*padding-top: 20px;*/
+    float: left;
+    margin-left: 40px;
+    width:50%;
+    position: relative;
+    width:350px;
+}
+.left p{
+    margin-top: 20px;
+    display: inline;
+    padding-right: 20px;
+    margin-top: 20px;
+}
+.left p a{
+    color: #9bcc60;
+}
+.right{
+    /*padding-top: 20px;*/
+    float: right;
+    margin-right: 40px;
+}
+
+.right .rightnum{
+    width:260px;
+    height:40px;
+    margin:0 auto;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.rightbox a{
+    display: block;
+    float: left;
+    width: 40px;
+    height:40px;
+    margin: 0 6px;
+    position: relative;
+    background-color: #0C0201;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    line-height: 40px;
+}
+.rightbox a:hover,.rightbox a:link{
+    background-color: #6eff5e;
+    color: #000;
+}
+
+.video-list{
+    margin-top: 20px;
+}
+.video-list .list-left{
+    width: 250px;
+    height:auto;
+    float: left;
+    background: #fff;
+}
+.video-list .list-left .left-positions{
+    width: 250px;
+    height:auto;
+    float: left;
+    /*background-color: #9bcc60;*/
+}
+
+.video-list .list-left .left{
+
+    padding:20px;
+}
+.video-list .time{
+    font-size:14px;
+    color: #727272;
+    line-height: 50px;
+}
+
+.video-list  .title b{
+    color:#19253a;
+    font-size:16px;
+    line-height: 40px;
+}
+
+.video-list .content{
+    color:#727272;
+    font-size:14px;
+    padding-bottom: 20px;
+}
+
+.video-list .b{
+    width: 210px;
+    height:45px;
+    color:#727272;
+    text-align: center;
+    line-height: 45px;
+    background-color: #b8b8b8;
+    font-weight: 700;
+    display: block;
+    margin:10px auto;
+    border-radius: 5px;
+}
+
+.video-list .b-course{
+    background-color: #9bcc60;
+}
+.video-list .list-left .teacher{
+    background-color: #fff;
+}
+.video-list .list-left .teacher img{
+    border-radius: 100px;
+    margin-left: 10px;
+}
+
+.video-list .list-left .teacher .teacher-name {
+    font-weight: 700;
+    color: #727272;
+    font-size:16px;
+}
+.video-list .list-left .teacher .teacher-des {
+    font-weight: 200;
+    color: #727272;
+    font-size:14px;
+    padding-top: 5px;
+    padding-left: 10px;
+}

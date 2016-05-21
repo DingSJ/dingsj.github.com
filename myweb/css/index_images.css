@@ -1,0 +1,12 @@
+/**{margin:0;padding:0;list-style-type:none;}*/
+a,img{border:0;height: 300px;width:100%;}
+/*body{font:12px/180% Arial, Helvetica, sans-serif, "新宋体";}*/
+
+.banner{width:100%;overflow:hidden;height:300px;position:relative}
+.banList{position:absolute;left:50%;margin-left:-960px;height:300px}
+.banList li{height:470px;opacity:0;position:absolute;transform:scale(0);transition:transform 0.5s ease 0s, opacity 1.5s ease 0s;z-index:1;}
+.banList li.active{opacity:1;transform:scale(1);z-index:2;}
+.fomW{position:absolute;bottom:20px;left:50%;height:20px;z-index:9;width:1000px;margin-left:-500px}
+.jsNav{text-align:center;}
+.jsNav a{display:inline-block;background:#fff;width:15px;height:15px;border-radius:50%;margin:0 5px;}
+.jsNav a.current{background:#fc8f0f;cursor:pointer}

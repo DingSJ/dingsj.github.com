@@ -1,0 +1,21 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+.box{
+    position: relative;
+    float: left;
+}
+
+.img{
+    padding:5px;
+    border:1px solid #e5ffc1;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+}
+
+.container img{
+    width:250px;
+    height: auto;
+}

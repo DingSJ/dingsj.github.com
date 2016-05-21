@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    background: #1C130E url(../images/bg.png);
+}
+
+#cat,#image_g{
+    width:600px;
+    height:550px;
+    margin:20px auto;
+    background-color: #0C0201;
+}
+
+canvas{
+    /*width:500px;*/
+    /*height:500px;*/
+    /*background-color: #695649;*/
+    margin:20px 20px;
+}
+img{
+    height:35px;
+    width:35px;
+    border-radius:17px;
+}
+
+#image{
+    position: absolute;
+}
+
+#pic{
+    background-color: #b2b2cc;
+}
