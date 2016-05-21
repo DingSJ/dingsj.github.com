@@ -1,449 +1,354 @@
 <!DOCTYPE html>
-<!--[if IE 7 ]>    <html class="ie7 oldie"> <![endif]-->
-<!--[if IE 8 ]>    <html class="ie8 oldie"> <![endif]-->
-<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html> <!--<![endif]-->
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/easeljs-0.8.2.min.js"></script>
+    <script src="js/Circle.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/cat.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/jquery-ui.css.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/index.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/index_images.css"/>
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <meta charset="utf-8"/>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <style type="text/css">
 
-    <title>DingSJ</title>
-
-    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-
-    <!--[if lt IE 9]>
-	    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery-1.6.1.min.js"><\/script>')</script>
-
-    <script src="js/scrollToTop.js"></script>
-
+    </style>
 </head>
+<body>
 
-<body id="top">
+<div id="face">
+</div>
 
-<!-- header
-============================================================================= -->
+<div id="header">
+    <div id="logo">
+        <!--<img src="images/i2.ico">--><font size="24" color="#7fff00">工程师</font>
+    </div>
+    <div id="menu">
+        <ul>
+            <li id="current"><a href="index.html">主页</a></li>
+            <!--<li><a href="#music" onclick="musicClicked()">音乐</a></li>-->
+            <!--<li><a href="#image" onclick="imageClicked()">图片</a></li>-->
+            <li><a href="#author" onclick="authorClicked()">关于作者</a></li>
+        </ul>
+    </div>
+</div>
 
-<div id="header-wrap"><header>
+<div id="news">
+    <!--<div id="time"></div>-->
+    <div id="time"><span class="span_time"></span></div>
+    <div id="new">
+        <marquee class="news" direction="left">作者正在求职中....</marquee>
+    </div>
+</div>
 
-        <hgroup>
-            <h1><a href="index.html"></a></h1>
-            <h3>Welcome to my Web.</h3>
-        </hgroup>
+<div id="game_play">
+    <canvas height="500px" width="520px" id="gameView">
+        你的浏览器不支持canvas标签
+    </canvas>
+    <br/>
+    <!--<button onclick="gameover()"><a href="#"><img src="images/close.png"> </a></button>-->
+    <!--<a href="#"> <img src="images/close.png" onclick="gameover()">结束游戏</a>-->
+    <!--<p class="start" onclick="game2()">继续游戏</p>-->
+    <p class="end" onclick="gameover()">结束游戏</p>
+    <script src="js/cat.js"></script>
+</div>
 
-		<nav>
-		    <ul>
-			    <li id="current"><a href="index.html">主页</a><span></span></li>
-			    <li><a href="style.html">Style Demo</a><span></span></li>
-			    <li><a href="blog.html">Blog</a><span></span></li>
-			    <li><a href="archive.html">Archives</a><span></span></li>
-			    <li><a href="index.html">Support</a><span></span></li>
-			    <li><a href="index.html">About</a><span></span></li>
-		    </ul>
-	    </nav>
+<div id="content1">
+    <div id="left">
+        <!--<div id="project">-->
+        <!--<div id="p_image">-->
+        <!--<a href="#project_recent" alt="跳转到项目"><img src="images/j1.jpg" onclick="authorClicked();"></a>-->
+        <!--</div>-->
+        <!--<a href="#project_recent" onclick="authorClicked();">最近项目：[杰信商贸][OA系统][网上商城]</a>-->
+        <!--</div>-->
+        <!--<div id="game">-->
+        <!--<div id="game_image">-->
+        <!--<img onclick="game()" src="images/game.jpg">-->
+        <!--</div>-->
+        <!--<a href="#" onclick="game()">游戏：【围住红心点】</a>-->
+        <!--</div>-->
+        <div class="content_left">
+            <div class="quick-link">
+                <strong>快速导航</strong>
+                <!--<button><img src="./images/search.png">快速导航</button>-->
+                <div class="link">
+                    <a href="#">联系作者</a>
+                    <div class="author">
+                        <div class="img">
+                            <img src="images/author.jpg"> &nbsp; &nbsp;&nbsp; &nbsp;DingDJ
+                        </div>
+                        <div class="info">
+                            电话：&nbsp; &nbsp;&nbsp;152 2568 6971 <br/>
+                            邮箱：15225686971@163.com<br/>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <div class="subscribe">
-            <span>Subscribe:</span> <a href="http://mail.163.com/index.htm" target="_blank">@163</a> | 
-			<a href="https://mail.qq.com/cgi-bin/loginpage" target="_blank">@QQ</a>
+            <!--<div class="project-list">-->
+            <!--<p><a href="#">项目连接</a></p>-->
+            <!--<div class="list">-->
+            <!--<a href="#">网上商城</a><br/>-->
+            <!--<a href="#">OA系统</a><br/>-->
+            <!--<a href="#">商贸管理</a>-->
+            <!--</div>-->
+            <!--</div>-->
+
+            <div class="game-list">
+                <h3>游戏</h3>
+                <div class="game">
+                    <!--<a href="#"><b>【包围中心红点】</b></a>-->
+                    <div class="game-info">
+
+                        <div class="info">
+                            游戏规则：<br/>
+                            1，图中的红心原点会自动移动。<br/>
+                            2，您可以点击图中的灰色原点以设置障碍。<br/>
+                            3，当红点无路可走时，您赢了，游戏结束。
+                            4，当红点无路走出边界，程序赢了，游戏终止。
+                        </div>
+                        <p onclick="game()">开始游戏</p>
+                        <!--<p>关闭游戏</p>-->
+                    </div>
+                </div>
+            </div>
+
         </div>
 
-    <!-- /header -->
-</header></div>
-
-<!-- featured
-============================================================================== -->
-
-<div id="featured-wrap"><article id="featured" class="clearfix">
-
-    <div id="featured-ribbon"></div>
-
-    <div class="image-block">
-        <a title="" href="#"><img width="335" height="240" alt="featured" src="images/img-featured.jpg" /></a>
-    </div>
-
-    <div class="text-block">
-        <h2><a href="#">Read Me First</a></h2>
-        <p class="post-meta">make a brief introduction</p>
-
-        <p><font size="+1">姓名:</font>&nbsp;&nbsp;&nbsp;DingSJ<br/>
-        <font size="+1">手机:</font>&nbsp;&nbsp;&nbsp;&nbsp;152 2568 6971<br/>
-        <font size="+1">邮箱:</font>&nbsp;&nbsp; 15225686971@163.com<br/>
-        <font size="+1">QQ:</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1172671075<br/>
-        </p>
-
-        <p>
-        求职意向： Java开发工程师（实习）
-        </p>
-        <p><a href="#recent" class="more">Continue Reading</a></p>
 
     </div>
+    <div class="center">
 
-</article></div>
-
-<!-- Content
-============================================================================== -->
-
-<div id="content-wrap-home">
-
-    <!-- main -->
-    <section id="main">
-		<a name="recent" href="#"></a>
-        <h3>Recent Projects</h3>
-
-        <article class="col">
-
-            <a href="index.html" title=""><img width="240" height="100" alt="img" class="thumbnail" src="images/thumb-1.jpg" /></a>
-
-            <div class="top">
-
-               <h4><a href="#">OA</a></h4>
-               <p><span class="datetime">March 15, 2016</span><!--a class="comment" href="index.html">2 Comments</a--></p>
+        <div class="c-content">
+            <div class="c1">
+                <p class="title-t title-t1">最近动态</p>
+                <span class="title-t title-t2">时间</span>
+            </div>
+            <div class="c1">
+                <a href="./imageshow/index.html" target="_blank">
+                    <p class="title">1，[CSS] 图片墙</p>
+                    <span>2016-5-20</span>
+                </a>
 
             </div>
-
-            <div class="content">
-
-			    <p>
-					
-              <table align="center">
-              	<tr height="10px">
-                	<td>模块</td>
-                    <td>用户管理、角色管理、权限管理、网上交流、流程管理</td>
-                </tr>
-                	<tr>
-                	<td>架构</td>
-                    <td>Struts2、Spring、Hibernate、jbpm</td>
-                </tr>
-                </tr>
-                	<tr>
-                	<td>工具</td>
-                    <td>MySQL、MyEclipse、Tomcat</td>
-                </tr>
-                </tr>
-                	<tr>
-                	<td>页面</td>
-                    <td><a href="./OA/index.html" target="_blank">Point I see</a></td>
-               </tr>
-               </tr>
-                	<tr>
-                	<td>源码</td>
-                    <td><a href="http://www.baidu.com" target="_blank">Point I see</a></td>
-               </tr>
-              </table>
-				</p>
-
-				<p><a href="#" class="more">continue reading</a></p>
-
-			</div>
-
-        </article>
-
-        <article class="col even">
-
-            <a href="index.html" title=""><img width="240" height="100" alt="img" class="thumbnail" src="images/thumb-2.jpg" /></a>
-
-            <div class="top">
-
-               <h4><a href="#">JK</a></h4>
-               <p><span class="datetime">April 17, 2016</span><!--a class="comment" href="index.html">2 Comments</a--></p>
-
+            <div class="c1">
+                <a href="#" onclick="game()">
+                    <p class="title">2，[CSS/JS] 围住中心红点</p>
+                    <span>2016-5-15</span>
+                </a>
+            </div>
+            <div class="c1">
+                <a href="./picflow/index.html" target="_blank">
+                    <p class="title">3，[CSS/JS] 图片瀑布流</p>
+                    <span>2016-4-5</span>
+                </a>
             </div>
 
-            <div class="content">
+            <div class="c1">
+                <a href="#">
+                    <p class="title">4，XX图片瀑布流XX</p>
+                    <span>2016-4-5</span>
+                </a>
+            </div>
+            <div class="c1"><a href="#">
+                <p class="title">5，XX图片瀑布流XX</p>
+                <span>2016-4-5</span>
+            </a>
+            </div>
+            <div class="c1"><a href="#">
 
-			    <p>
-				 <table align="center">
-              	<tr>
-                	<td>项目模块</td>
-                    <td>用户管理、角色管理、权限管理、流程管理</td>
-                </tr>
-                	<tr>
-                	<td>项目架构</td>
-                    <td>Struts2、Spring、Hibernate、Maven</td>
-                </tr>
-                </tr>
-                	<tr>
-                	<td>项目工具</td>
-                    <td>MySQL、Eclipse-Maven、Tomcat</td>
-                </tr>
-                </tr>
-                	<tr>
-                	<td>静态页面</td>
-                    <td><a href="./JK/index.html" target="_blank">Point I see</a></td>
-               </tr>
-               </tr>
-                	<tr>
-                	<td>项目源码</td>
-                    <td><a href="./OA/index.html" target="_blank">Point I see</a></td>
-               </tr>
-              </table>
-				</p>
-
-				<p><a href="#" class="more">continue reading</a></p>
-
-			</div>
-        </article>
-
-        <div class="fix"></div>
-
-        <article class="col">
-
-            <a href="index.html" title=""><img width="240" height="100" alt="img" class="thumbnail" src="images/thumb-3.jpg" /></a>
-
-            <div class="top">
-
-               <h4><a href="index.html">Cras Fringilla Magna</a></h4>
-               <p><span class="datetime">December 16, 2011</span><a class="comment" href="index.html">2 Comments</a></p>
-
+            </a>
+                <a href="#">
+                    <p class="title">XX图片瀑布流XX</p>
+                    <span>2016-4-5</span>
+                </a>
+            </div>
+            <div class="c1"><a href="#">
+                <p class="title">XX图片瀑布流XX</p>
+                <span>2016-4-5</span>
+            </a>
             </div>
 
-            <div class="content">
+        </div>
 
-			    <p>
-				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum.
-				Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu
-				posuere nunc justo tempus leo. Donec mattis, purus nec placerat bibendum, dui pede condimentum
-			   	odio, ac blandit ante orci ut diam. Cras fringilla magna. Phasellus suscipit, leo a pharetra
-				condimentum, lorem tellus eleifend magna, eget fringilla velit magna id neque.
-				</p>
+    </div>
+    <div id="right">
+        <!--<div id="m">-->
 
-				<p><a href="#" class="more">continue reading</a></p>
+        <!--</div>-->
+        <div id="hotlink">
+            <!--<h3>热门连接</h3>-->
+            <table>
+                <tr>
+                    <td><p>充电时刻</p></td>
+                </tr>
 
-			</div>
+                <tr>
+                    <td><a href="http://www.ichunqiu.com/main" target="_blank">i春秋学院_培育信息时代的安全感</a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://www.imooc.com/" target="_blank">慕课网-国内最大的IT技能学习平台</a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://gate.guokr.com/" target="_blank">果壳网 科技有意思</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
 
-        </article>
-
-        <article class="col even">
-
-            <a href="index.html" title=""><img width="240" height="100" alt="img" class="thumbnail" src="images/thumb-4.jpg" /></a>
-
-            <div class="top">
-
-               <h4><a href="index.html">Orci Ac Convallis Aliquam</a></h4>
-               <p><span class="datetime">December 14, 2011</span><a class="comment" href="index.html">2 Comments</a></p>
-
-            </div>
-
-            <div class="content">
-
-			    <p>
-				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum.
-				Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu
-				posuere nunc justo tempus leo. Donec mattis, purus nec placerat bibendum, dui pede condimentum
-			   	odio, ac blandit ante orci ut diam. Cras fringilla magna. Phasellus suscipit, leo a pharetra
-				condimentum, lorem tellus eleifend magna, eget fringilla velit magna id neque.
-				</p>
-
-				<p><a href="#" class="more">continue reading</a></p>
-
-			</div>
-
-        </article>
-
-
-
-    </section>
-
-    <!-- sidebar -->
-    <aside id="sidebar">
-
-				<div class="sidemenu">
-					<h3>Sidebar Menu</h3>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="index.html">TemplateInfo</a></li>
-						<li><a href="style.html">Style Demo</a></li>
-						<li><a href="blog.html">Blog</a></li>
-						<li><a href="archives.html">Archives</a></li>
-					</ul>
-				</div>
-
-
-				<div class="sidemenu">
-					<h3>Sponsors</h3>
-					<ul>
-						<li><a title="Site Templates" href="http://sc.chinaz.com?ref=ealigam">Themeforest
-                            <span>Site Templates, Web &amp; CMS Themes</span>
-                            </a>
-                        </li>
-						<li><a title="Website Templates" href="http://sc.chinaz.com/?go=228858961">4Templates
-                            <span>Low Cost High-Quality Templates</span>
-                            </a>
-                        </li>
-						<li><a title="Web Templates" href="http://sc.chinaz.com?aff=ealigam">TemplateMonster
-                            <span>Delivering the Best Templates on the Net!</span>
-                            </a>
-                        </li>
-						<li><a title="Stock Graphics" href="http://sc.chinaz.com?ref=ealigam">GraphicRiver
-                            <span>Awesome Stock Graphics</span>
-                            </a>
-                        </li>
-						<li><a title="Web Hosting" href="http://sc.chinaz.com/?r.cgi?287326|SSHOUT">DreamHost
-                            <span>Premium Webhosting. Use the promocode <strong>sshout</strong> and save <strong>50 USD</strong>.</span>
-                            </a>
-                        </li>
-					</ul>
-				</div>
-
-				<h3>Photostream</h3>
-
-				<ul class="photostream">
-					<li><a href="index.html"><img width="50" height="50" alt="thumbnail" src="images/thumb.jpg"></a></li>
-					<li><a href="index.html"><img width="50" height="50" alt="thumbnail" src="images/thumb.jpg"></a></li>
-					<li><a href="index.html"><img width="50" height="50" alt="thumbnail" src="images/thumb.jpg"></a></li>
-					<li><a href="index.html"><img width="50" height="50" alt="thumbnail" src="images/thumb.jpg"></a></li>
-					<li><a href="index.html"><img width="50" height="50" alt="thumbnail" src="images/thumb.jpg"></a></li>
-					<li><a href="index.html"><img width="50" height="50" alt="thumbnail" src="images/thumb.jpg"></a></li>
-				</ul>
-
-	<!-- /sidebar -->
-	</aside>
+            </table>
+        </div>
+    </div>
 
 </div>
 
-<!-- extra
-============================================================================== -->
-<div id="extra-wrap"><div id="extra" class="clearfix">
+<!--音乐-->
+<a name="music">
+</a>
+<div id="content2">
+    yinyue
+</div>
 
-    <div class="xcol">
+<!--图片-->
+<a name="image"></a>
+<!--<div id="content3">
+    图跑进
+</div>-->
 
-		    <h3>Contact Info</h3>
-
-		    <p>
-		    <strong>Phone: </strong>+1234567<br/>
-		    <strong>Fax: </strong>+123456789
-		    </p>
-
-		    <p><strong>Address: </strong>123 Put Your Address Here</p>
-            <p><strong>E-mail: </strong>me@jungleland.com</p>
-		    <p>Want more info - go to our <a href="#">contact page</a></p>
-
-            <h3>Follow Us</h3>
-
-	        <div class="footer-list social">
-			    <ul>
-				    <li class="facebook"><a href="index.html">Facebook</a></li>
-				    <li class="twitter"><a href="index.html">Twitter</a></li>
-				    <li class="googleplus"><a href="index.html">Google+</a></li>
-				    <li class="email"><a href="index.html">Email</a></li>
-				    <li class="rss"><a href="index.html">RSS Feed</a></li>
-			    </ul>
-		    </div>
-
-	</div>
-
-    <div class="xcol">
-
-            <h3>Site Links</h3>
-
-	        <div class="footer-list">
-			    <ul>
-				    <li><a href="index.html">Home</a></li>
-				    <li><a href="index.html">Style Demo</a></li>
-				    <li><a href="index.html">Blog</a></li>
-				    <li><a href="index.html">Archive</a></li>
-				    <li><a href="index.html">About</a></li>
-                    <li><a href="index.html">Contact</a></li>
-                    <li><a href="index.html">Site Map</a></li>
-			    </ul>
-		    </div>
-
-            <h3>Credits</h3>
-
-            <div class="footer-list">
-			    <ul>
-				    <li><a href="http://sc.chinaz.com/?free/vector-social-media-icons">
-						Social Media Icons by Icondock
-				        </a>
-				    </li>
-                    <li><a href="http://sc.chinaz.com/?">
-						Free Icons by Yummygum
-				        </a>
-				    </li>
-                    <li><a href="http://sc.chinaz.com/">
-                        Free Photos by PDPhoto
-                        </a>
-                    </li>
-			    </ul>
-		    </div>
+<!--作者-->
+<a name="author"></a>
+<div id="content4">
+    <div id="author_up">
+        <div id="myiamge_div"><img id="myimage" src="images/me.jpg"></div>
+        <div id="info">
+            <!--<p>姓名   DingSj</p>-->
+            <!--<p>学历   本科</h4></p>-->
+            <!--<p>专业   信息与计算科学</p>-->
+            <table>
+                <tr>
+                    <td>
+                        <string>姓名</string>
+                    </td>
+                    <td align="left">DingSj</td>
+                </tr>
+                <tr>
+                    <td>
+                        <string>学历</string>
+                    </td>
+                    <td align="left">本科</td>
+                </tr>
+                <tr>
+                    <td>
+                        <string>专业</string>
+                    </td>
+                    <td align="left">信息与计算科学</td>
+                <tr>
+                    <td>
+                        <string>手机</string>
+                    </td>
+                    <td align="left">152 2568 6971</td>
+                </tr>
+                <tr>
+                    <td>
+                        <string>邮箱</string>
+                    </td>
+                    <td align="left">15225686971@163.com</td>
+                </tr>
+            </table>
+        </div>
+        <div id="info2">
+            <br/><br/>
+            <h3>应聘职位</h3><br/>
+            <p>Java开发工程师</p>
+        </div>
     </div>
 
-    <div class="xcol">
+    <div id="author_down">
+        <h2>基本技能</h2>
+        <h4>1 . 掌握Java开发技术；</h4>
+        <h4>2 . 熟悉各种Web前端技术，JSP，HTML、css，JavaScript、Ajax等； </h4>
+        <h4>3 . 熟悉主流开源应用框架，如Spring、Struts2、Hibernate、等开发技术；</h4>
+        <h4>4 . 熟悉主流数据库，MySQL，Oracle；</h4>
+        <h4>5 . 了解Web Service技术；</h4>
+        <h4>6． 熟悉JAVA Eclipse、SQLyog、Tomcat等开发工具；</h4>
+        <h4>7 . 了解UML等建模语言、PowerDesigner等设计常用工具；</h4>
+        <h4>8． 熟悉版本管理器SVN；</h4>
+        <h4>9． 良好的编码习惯；</h4>
+        <h4>10．良好的学习能力、团队协作能力和沟通能力；善于思考，能独立分析和解决问题。</h4>
+    </div>
 
-
-
-            <h3>Archives</h3>
-
-	        <div class="footer-list">
-			    <ul>
-				    <li><a href="index.html">December 2011</a></li>
-				    <li><a href="index.html">November 2011</a></li>
-				    <li><a href="index.html">October 2011</a></li>
-				    <li><a href="index.html">September 2011</a></li>
-                    <li><a href="index.html">August 2011</a></li>
-                    <li><a href="index.html">July 2011</a></li>
-			    </ul>
-		    </div>
-
-            <h3>Web Resources</h3>
-
-	        <div class="footer-list">
-				<ul>
-                    <li><a title="Site Templates" href="http://sc.chinaz.com?ref=ealigam">ThemeForest</a></li>
-					<li><a title="Website Templates" href="http://sc.chinaz.com/?go=228858961">4Templates</a></li>
-					<li><a title="Web Templates" href="http://sc.chinaz.com?aff=ealigam">TemplateMonster</a></li>
-					<li><a title="Stock Graphics" href="http://sc.chinaz.com?ref=ealigam">GraphicRiver</a></li>
-					<li><a title="Web Hosting" href="http://sc.chinaz.com/?r.cgi?287326">Dreamhost</a></li>
-				</ul>
-			</div>
-
-	</div>
-
-
-
-    <div class="xcol last">
-
-        <h3>About</h3>
-
+    <div id="author_down2">
+        <h2>项目</h2><br/>
+        【
+        <string>OA系统</string>
+        】<br/>
         <p>
-        <a href="index.html"><img width="40" height="40" class="align-left" alt="firefox" src="images/gravatar.jpg"></a>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum.
-        Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu posuere nunc
-        justo tempus leo. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum.
-        Cras id urna. <a href="#">Learn more...</a>
-        </p>
+            [系统框架]：基于 MVC 的应用。采用Spring、Struts2、Hibernate框架。<br/>
+            [页面显示]：JSP、CSS、JS<br/>
+            [ 数据库 &nbsp;]： MySQL<br/>
+            [主要模块]：系统管理、系统权限、内部论坛、审批流转。<br/>
+            [详情连接]：http://dingsj.github.io<br/>
+        </p><br/>
+        【
+        <string>网上商城</string>
+        】<br/>
+        <p>
+            [系统框架]：Struts2 + Hibernate3 + Spring3 + jQuery + json <br/>
+            [关键技术]：关键技术 <br/>
+            [页面显示]：JSP、CSS、JS<br/>
+            [ 数据库 &nbsp;]： MySQL<br/>
+            [主要模块]：基础代码、厂家信息、购销合同、报运、HOME装箱单、 装箱、委托、发票、财务。 <br/>
+            [详情连接]：http://dingsj.github.io<br/>
+        </p><br/>
 
-
+        【
+        <string>杰信商贸综合管理系统</string>
+        】<br/>
+        <p>
+            [系统框架]：SSH(Struts2+Spring+Hibernate)<br/>
+            [页面显示]：JSP、CSS、JS<br/>
+            [ 数据库 &nbsp;]： MySQL<br/>
+            [主要模块]：用户管理、订单管理、商品管理、商品分类管理、购物车、订单等<br/>
+            [详情连接]：http://dingsj.github.io<br/>
+        </p><br/>
     </div>
 
-</div></div>
+</div>
 
-<!-- footer
-============================================================================== -->
-<footer class="clearfix">
-
-	<p class="footer-left">
-		&copy; Copyright &copy; 2016.
-	</p>
-
-	<p class="footer-right">
-	   	<a href="index.html">Home</a> |
-		<!--a href="index.html">Sitemap</a> |
-		<a href="index.html">RSS Feed</a> |-->
-        <a class="back-to-top" href="#top">Back to Top</a>
-    </p>
-
-<!-- /footer -->
-</footer>
-
-
-
-<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+<a name="project_recent"></a>
+<hr/>
+<div id="footer">
+    <ul>
+        <li><a href="#">友情链接</a></li>
+        <li><a href="http://www.csdn.net/">CSDN </a></li>
+        <li><a href="https://github.com/">GITHUB </a></li>
+        <li><a href="http://stackoverflow.com/">STACKOVERFLOW </a></li>
+        <li><a href="https://jqueryui.com/">jQuery UI</a></li>
+    </ul>
+</div>
 </body>
 </html>
