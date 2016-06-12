@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>电影</title>
+    <script src="./js/movie.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/movie.css">
+</head>
+<body>
+
+<div class="content-body">              <!--网页内容-->
+    <div class="title-header">          <!--标题栏-->
+        <a href="#" title="回到首页">
+            <div class="title-img">
+                <img class="child-img" src="./image/smile.png">
+            </div>
+            <div class="title-title">
+                MV-Tai
+            </div>
+            <div class="title-title-right">
+                <span>感受-感动</span>
+            </div>
+        </a>
+    </div>
+    <div class="movie">                 <!-- MV-top -->
+        <!--<div class="m-top">-->
+        <!--<video controls="controls">-->
+        <!--<source class="mv-s1" src="./mv/1.mp4">-->
+        <!--<source class="mv-s2" src="./mv/1.ogg">-->
+        <!--对不起，您的浏览器不支持该标签</video>-->
+        <!--</div>-->
+        <div class="m-top">
+            <video controls="controls" src="./mv/1.mp4">
+                对不起，您的浏览器不支持该标签
+            </video>
+        </div>
+        <div class="m-bottom">          <!-- MV-bottom -->
+            <div class="m-bottom-left">
+                <span class="mv-name">[一生所爱]</span>
+                <span class="mv-author">卢冠廷</span>
+            </div>
+            <div class="m-bottom-right">
+                <ul>
+                    <li><a href="#" id="m5" onclick="changeMV(this)">5</a></li>
+                    <li><a href="#" id="m4" onclick="changeMV(this)">4</a></li>
+                    <li><a href="#" id="m3" onclick="changeMV(this)">3</a></li>
+                    <li><a href="#" id="m2" onclick="changeMV(this)">2</a></li>
+                    <li><a href="#" id="m1" onclick="changeMV(this)">1</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="mv-info">              <!-- 视频介绍-->
+        <h1>MV 介绍</h1>
+        <hr/>
+        <span class="text-min">发布时间：2013-05-16</span><br/>
+        <span class="text-min">播放次数：124万次</span><br/>
+        <span class="text-min">MV来源：网易客户端</span><br/>
+        <span class="text-min">《大话西游》重温</span><br/>
+
+        <h1>相关 MV</h1>
+        <hr/>
+        <div class="relative-mv">
+            <div class="relative-mv-img">
+                <img src="./image/117-67.jpg">
+            </div>
+            <div class="relative-mv-info">
+                <span class="relative-mv-name">平凡之路</span><br/>
+                <span class="relative-mv-auto">朴树</span>
+            </div>
+        </div>
+        <div class="relative-mv">
+            <div class="relative-mv-img">
+                <img src="./image/116-67.jpg">
+            </div>
+            <div class="relative-mv-info">
+                <span class="relative-mv-name">如果没有以后</span><br/>
+                <span class="relative-mv-auto">樊凡</span>
+            </div>
+        </div>
+        <div class="relative-mv">
+            <div class="relative-mv-img">
+                <img src="./image/117-66.jpg">
+            </div>
+            <div class="relative-mv-info">
+                <span class="relative-mv-name">绅士</span><br/>
+                <span class="relative-mv-auto">薛之谦</span>
+            </div>
+        </div>
+        <div class="relative-mv">
+            <div class="relative-mv-img">
+                <img src="./image/seeyou.jpg">
+            </div>
+            <div class="relative-mv-info">
+                <span class="relative-mv-name">See You Again</span><br/>
+                <span class="relative-mv-auto">WizKhalifa</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="mv-info-right">
+        <h1>精彩评论</h1>
+        <hr/>
+        <div class="topic">
+            <div class="topic-img">
+                <img src="./image/a1.jpg">
+            </div>
+            <div class="topic-info">
+                <span class="author">Childewen :</span><span class="author-say">500年后至尊宝喜欢白晶晶，白晶晶喜欢500年前的孙悟空。而500年前紫霞却喜欢上了为救白晶晶而穿越而来的至尊宝，错误的时间，遇上了错误的人，最后一转身，背后是一整个沙漠</span>
+            </div>
+            <div class="topic-bottom">
+                <span class="topic-time">2014年10月26日 16:41</span>
+                <span class="topic-other">赞（5457） &nbsp;&nbsp;| &nbsp;&nbsp;分享&nbsp;&nbsp; |&nbsp;&nbsp; 回复&nbsp;&nbsp; </span>
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="topic">
+            <div class="topic-img">
+                <img src="./image/a2.jpg">
+            </div>
+            <div class="topic-info">
+                <span class="author">那武哥哥 :</span><span class="author-say">其实不管是孙悟空还是至尊宝，都是导演的一个设定，就是说一个人的不同阶段，爱上了两个不同的人，而且都是真爱，不管是白晶晶或者紫霞，都是他的真爱。以前一直坚定以为一段情可以一直到老，是真爱，明白的时候才知道人的一生中是可以有不同的真爱的，心头一疼，很悲凉。</span>
+            </div>
+            <div class="topic-bottom">
+                <span class="topic-time">2014年12月8日 17:12 </span>
+                <span class="topic-other">赞（2873） &nbsp;&nbsp;| &nbsp;&nbsp;分享&nbsp;&nbsp; |&nbsp;&nbsp; 回复&nbsp;&nbsp; </span>
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="topic">
+            <div class="topic-img">
+                <img src="./image/a3.jpg">
+            </div>
+            <div class="topic-info">
+                <span class="author">issaclove :</span><span class="author-say"> 既不回头，何必不忘； 既然无缘，何需誓言。 今日种种，似水无痕， 明夕何夕，君已陌路。</span>
+            </div>
+            <div class="topic-bottom">
+                <span class="topic-time">2014年10月26日</span>
+                <span class="topic-other">赞（2239） &nbsp;&nbsp;| &nbsp;&nbsp;分享&nbsp;&nbsp; |&nbsp;&nbsp; 回复&nbsp;&nbsp; </span>
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="topic">
+            <div class="topic-img">
+                <img src="./image/a4.jpg">
+            </div>
+            <div class="topic-info">
+                <span class="author">@慕曉春來遲1 :</span><span class="author-say">我的意中人是个盖世英雄，有一天他会踩着七色云彩来娶我，但我猜中了前头（踩着七色云彩来了）可我却怎么猜不到这结局（等来了一只猴子）！之后仙子气晕了过去</span>
+            </div>
+            <div class="topic-bottom">
+                <span class="topic-time">2016年06月12日</span>
+                <span class="topic-other">赞（0） &nbsp;&nbsp;| &nbsp;&nbsp;分享&nbsp;&nbsp; |&nbsp;&nbsp; 回复&nbsp;&nbsp; </span>
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="topic">
+            <div class="topic-img">
+                <img src="./image/a5.jpg">
+            </div>
+            <div class="topic-info">
+                <span class="author">小檞 :</span><span class="author-say">每个人都是至尊宝，年轻是时放荡不羁，无拘无束，为了责任和爱，不得不成为强大的孙悟空忍受无尽的痛苦，最后像狗一样劳碌奔波。有时候你想得到一切，到头来发现失去的更多。</span>
+            </div>
+            <div class="topic-bottom">
+                <span class="topic-time">2016年06月12日</span>
+                <span class="topic-other">赞（1） &nbsp;&nbsp;| &nbsp;&nbsp;分享&nbsp;&nbsp; |&nbsp;&nbsp; 回复&nbsp;&nbsp; </span>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+</body>
+</html>
