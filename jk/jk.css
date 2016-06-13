@@ -1,0 +1,164 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: #e1e1e1;
+}
+.header{
+    height: 77px;
+    width: 998px;
+    margin:0px auto;
+    background-image: url("images/header.jpg");
+    /*text-align: right;*/
+}
+.content {
+    height: auto;
+    width: 1000px;
+    margin: 0px auto;
+}
+
+.content .show-image,
+.content .show-image-bottom,
+.content .show-image-bottom .image-span-1,
+.content .show-image-bottom .show-image-bottom-left,
+.content .show-image-bottom .show-image-bottom-right,
+.content .show-image-bottom .show-image-bottom-right ul li a,
+.content .show-image-bottom .show-image-bottom-right ul li {
+    background-color: #3183ff;
+}
+
+.content img {
+    width: 1000px;
+    height: 450px;
+}
+
+.content .show-image-bottom {
+    height: 35px;
+    width: 1000px;
+}
+
+.content .show-image-bottom .image-span-1 {
+    line-height: 24px;
+    font-size: 16px;
+    margin-left: 30px;
+    line-height: 30px;
+    color: #feff37;
+
+}
+
+.content .show-image-bottom .show-image-bottom-left {
+    float: left;
+    width: 40%;
+    height: 30px;
+}
+
+.content .show-image-bottom .show-image-bottom-right {
+    float: right;
+    width: 60%;
+    height: 30px;
+}
+
+.content .show-image-bottom .show-image-bottom-right ul li {
+    float: right;
+    list-style: none;
+}
+
+.content .show-image-bottom .show-image-bottom-right ul {
+    margin-right: 40px;
+}
+
+.content .show-image-bottom .show-image-bottom-right ul li a {
+    display: block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    margin-left: 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #2862d5;
+    line-height: 30px;
+    color: #feff37;
+}
+
+.content .show-image-bottom .show-image-bottom-right ul li a:hover {
+    border: 2px solid #feff37;
+}
+
+/*#test {*/
+    /*height: 100px;*/
+    /*width: 1000px;*/
+    /*background-color: chocolate;*/
+/*}*/
+
+.content .project-introduction {
+    height: auto;
+    width: 1000px;
+    margin-top: 10px;
+}
+
+.content .project-introduction .project-introduction-left {
+    float: left;
+    background-color: #ffffff;
+}
+
+.content .project-introduction .project-introduction-right {
+    background-color: white;
+    float: left;
+}
+
+
+.content .project-introduction .project-introduction-left {
+    height:400px;
+    width:450px;
+    float: left;
+    padding: 10px;
+}
+
+.content h1{
+    line-height: 48px;
+    font-weight: 400;
+    background-color: white;
+    color: #929292;
+}
+.content h3{
+
+    line-height: 34px;
+    font-weight: 400;
+    background-color: white;
+    color: #929292;
+}
+.content .text-0{
+    line-height: 24px;
+    font-size:14px;
+    background-color: white;
+    color: #696969;
+}
+
+.content .project-introduction .project-introduction-right {
+    height:400px;
+    width:500px;
+    float: right;
+    padding: 10px;
+}
+
+.content .project-introduction2{
+    clear: both;
+}
+.content .project-introduction2 .hr{
+    height:10px;
+    width:1000px;
+    border-bottom: 1px solid #868686;
+}
+.content .project-introduction2 .project-introduction2-left{
+    float: left;
+    width:400px;
+}
+.content .project-introduction2 .project-introduction2-left img{
+    height:300px;
+    width:580px;
+}
+
+.content .project-introduction2 .project-introduction2-right{
+    float: right;
+    width:400px;
+    padding:10px;
+}
